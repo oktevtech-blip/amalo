@@ -1,0 +1,91 @@
+.amaloo-projects-section{
+    padding:120px 8%;
+    background:white;
+}
+
+.amaloo-projects-header{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:70px;
+}
+
+.amaloo-projects-header span{
+    color:#0f766e;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.amaloo-projects-header h2{
+    font-size:clamp(2.6rem,5vw,4rem);
+    margin:20px 0;
+    color:#102a43;
+}
+
+.amaloo-projects-header p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+.amaloo-projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.amaloo-project-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:22px;
+    height:450px;
+}
+
+.amaloo-project-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.amaloo-project-card:hover img{
+    transform:scale(1.1);
+}
+
+.amaloo-project-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top,rgba(0,0,0,.9),rgba(0,0,0,.2));
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:30px;
+    color:white;
+}
+
+.amaloo-project-overlay span{
+    color:#9ae6b4;
+    margin-bottom:10px;
+}
+
+.amaloo-project-overlay h3{
+    font-size:1.8rem;
+    margin-bottom:12px;
+}
+
+.amaloo-project-overlay p{
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.amaloo-project-overlay button{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#0f766e;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:50px;
+    cursor:pointer;
+    width:max-content;
+}

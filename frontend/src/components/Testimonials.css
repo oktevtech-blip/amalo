@@ -1,0 +1,72 @@
+.amaloo-testimonials-section{
+    padding:120px 8%;
+    background:#f8fafc;
+}
+
+.amaloo-testimonials-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.amaloo-testimonials-header span{
+    color:#0f766e;
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+.amaloo-testimonials-header h2{
+    font-size:clamp(2.5rem,5vw,4rem);
+    color:#102a43;
+    margin-top:20px;
+}
+
+.amaloo-testimonials-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
+}
+
+.amaloo-testimonial-card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.amaloo-testimonial-card:hover{
+    transform:translateY(-8px);
+}
+
+.quote-icon{
+    color:#0f766e;
+    margin-bottom:20px;
+}
+
+.amaloo-testimonial-card p{
+    line-height:1.8;
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+.amaloo-client{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.amaloo-client img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.amaloo-client h4{
+    margin:0;
+    color:#102a43;
+}
+
+.amaloo-client span{
+    color:#64748b;
+}

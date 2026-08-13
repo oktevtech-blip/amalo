@@ -1,0 +1,78 @@
+.amaloo-service-card{
+    overflow:hidden;
+    background:#fff;
+    border-radius:18px;
+    transition:.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.amaloo-service-card:hover{
+    transform:translateY(-8px);
+}
+
+.amaloo-service-image{
+    position:relative;
+    height:230px;
+    overflow:hidden;
+}
+
+.amaloo-service-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.amaloo-service-card:hover img{
+    transform:scale(1.08);
+}
+
+.amaloo-service-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.15)
+    );
+}
+
+.amaloo-service-number{
+    position:absolute;
+    top:18px;
+    right:18px;
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:white;
+    display:grid;
+    place-items:center;
+    font-weight:bold;
+}
+
+.amaloo-service-content{
+    padding:28px;
+}
+
+.amaloo-service-content h3{
+    font-size:24px;
+    margin-bottom:14px;
+    color:#102a43;
+}
+
+.amaloo-service-content p{
+    color:#64748b;
+    line-height:1.8;
+    margin-bottom:24px;
+}
+
+.amaloo-service-button{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border:none;
+    background:none;
+    color:#0f766e;
+    font-weight:700;
+    cursor:pointer;
+}
