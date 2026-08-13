@@ -12,26 +12,23 @@
 
 // export default db;
 
-const mysql = require("mysql2/promise");
-const path = require("path");
+const mysql = require("mysql2");
+require("dotenv").config();
 
-const pool = mysql.createPool({
+const db = mysql.createPool({
   host: process.env.DB_HOST,
-  port: Number(process.env.DB_PORT),
+  port: process.env.DB_PORT,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
 
-  ssl: {
-    ca: require("fs").readFileSync(
-      path.join(__dirname, "../certs/ca.pem")
-    ),
-    rejectUnauthorized: true,
-  },
-
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
+
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
-module.exports = pool;
+module.exports = db.promise();
